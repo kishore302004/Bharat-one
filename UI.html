@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bharat Transport Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://broken-lime-a2y9mtctas.edgeone.app/55f5731c-bccb-45fb-83b4-da7509312132.png");
+
+background-size:cover;
+background-position:center;
+color:white;
+
+}
+
+/* NAVBAR */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 70px;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:600;
+
+}
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+font-weight:300;
+
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+
+text-align:center;
+margin-top:120px;
+
+}
+
+.hero-content h1{
+
+font-size:50px;
+margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+opacity:0.9;
+margin-bottom:40px;
+
+}
+
+/* PLANNER */
+
+.planner{
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:15px;
+display:inline-flex;
+flex-wrap:wrap;
+gap:15px;
+
+}
+
+.planner input,
+.planner select{
+
+padding:12px;
+border:none;
+border-radius:6px;
+width:200px;
+
+}
+
+.planner button{
+
+background:#ff7a18;
+border:none;
+padding:12px 20px;
+color:white;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+/* FEATURES */
+
+.features{
+
+padding:90px 80px;
+background:#f7f7f7;
+text-align:center;
+
+}
+
+.features h2{
+
+font-size:36px;
+margin-bottom:50px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* MAP */
+
+.map-section{
+
+padding:90px;
+text-align:center;
+
+}
+
+.map-box{
+
+height:400px;
+background:#ddd;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+
+}
+
+/* DESTINATIONS */
+
+.destinations{
+
+padding:90px;
+background:#fafafa;
+text-align:center;
+
+}
+
+.destinations h2{
+
+margin-bottom:40px;
+
+}
+
+.places{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+
+}
+
+.place{
+
+height:200px;
+border-radius:12px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:end;
+color:white;
+padding:15px;
+font-weight:600;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#111;
+color:white;
+text-align:center;
+padding:35px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<section class="hero">
+
+<nav>
+
+<div class="logo">🇮🇳 Bharat Transport Hub</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Plan Trip</a></li>
+<li><a href="#">Tickets</a></li>
+<li><a href="#">Destinations</a></li>
+<li><a href="#">Support</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="hero-content">
+
+<h1>Travel Anywhere Across India</h1>
+
+<p>Trains • Metro • Buses • Cab • Bike Taxi — All in One Platform</p>
+
+<div class="planner">
+
+<input placeholder="From Location">
+
+<input placeholder="Destination">
+
+<select>
+<option>Select State</option>
+<option>Tamil Nadu</option>
+<option>Karnataka</option>
+<option>Kerala</option>
+<option>Maharashtra</option>
+<option>Delhi</option>
+<option>West Bengal</option>
+<option>Uttar Pradesh</option>
+<option>Madhya Pradesh</option>
+<option>Rajasthan</option>
+<option>Gujarat</option>
+<option>Andhra Pradesh</option>
+<option>Telangana</option>
+<option>Punjab</option>
+<option>Haryana</option>
+<option>Odisha</option>
+<option>Assam</option>
+<option>Chhattisgarh</option>
+<option>Jharkhand</option>
+<option>Uttarakhand</option>
+<option>Himachal Pradesh</option>
+<option>Goa</option>
+<option>Tripura</option>
+<option>Meghalaya</option>  
+<option>Manipur</option>
+<option>Nagaland</option>
+<option>Arunachal Pradesh</option>
+<option>Sikkim</option>
+<option>Andaman & Nicobar</option>
+<option>Lakshadweep</option>
+<option>Assam</option>
+<option>Mizoram</option>
+<option>Bihar</option>
+<option>Chandigarh</option>
+<option>Dadra & Nagar Haveli</option>
+<option>Daman & Diu</option>
+<option>Pudhucherry</option>
+<option>Ladakh</option> 
+<option>Jammu & Kashmir</option>
+</select>
+
+<select>
+<option>Preference</option>
+<option>Cheapest</option>
+<option>Fastest</option>
+<option>Comfortable</option>
+</select>
+
+<button onclick="planTrip()">Plan Journey</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="features">
+
+<h2>Smart Travel Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚆 Train Booking</h3>
+<p>Book railway tickets and track trains across India</p>
+</div>
+
+<div class="card">
+<h3>🚌 State Transport</h3>
+<p>Access buses from every Indian state</p>
+</div>
+
+<div class="card">
+<h3>🚇 Metro Routes</h3>
+<p>Navigate metro systems across major cities</p>
+</div>
+
+<div class="card">
+<h3>🚖 Cab Comparison</h3>
+<p>Compare Uber, Ola, Rapido prices instantly</p>
+</div>
+
+<div class="card">
+<h3>📍 Smart Route Planner</h3>
+<p>AI powered travel route suggestions</p>
+</div>
+
+<div class="card">
+<h3>🌐 Multi Language</h3>
+<p>Available in all major Indian languages</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="map-section">
+
+<h2>Interactive Travel Map</h2>
+
+<br>
+
+<div class="map-box">
+
+Map Integration (Google Maps / OpenStreetMap)
+
+</div>
+
+</section>
+
+
+
+<section class="destinations">
+
+<h2>Popular Destinations</h2>
+
+<div class="places">
+
+<div class="place" style="background-image:url('https://images.unsplash.com/photo-1564507592333-c60657eea523')">
+Taj Mahal
+</div>
+
+<div class="place" style="background-image:url('https://instant-beige-g15dt8m6je.edgeone.app/licensed-image.jpeg')">
+Marina Beach
+</div>
+
+<div class="place" style="background-image:url('https://images.unsplash.com/photo-1587474260584-136574528ed5')">
+Gateway of India
+</div>
+
+<div class="place" style="background-image:url('https://explicit-bronze-pqt2e2on0g.edgeone.app/Bruised-PAssports-Meghalaya-Trip-Itinerary-5.jpg')">
+Meghalaya
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Bharat Transport Hub | Connecting Every Corner of India</p>
+
+</footer>
+
+
+
+<script>
+
+function planTrip(){
+
+alert("Smart route planning coming soon")
+
+}
+
+</script>
+
+</body>
+</html>
